@@ -1,0 +1,99 @@
+Pred Neural Network
+                  precision    recall  f1-score   support
+
+           back.       0.99      1.00      1.00       187
+buffer_overflow.       0.67      0.50      0.57         8
+      ftp_write.       1.00      0.00      0.00         1
+   guess_passwd.       1.00      1.00      1.00         8
+           imap.       1.00      0.00      0.00         1
+        ipsweep.       0.97      0.98      0.98       125
+           land.       1.00      1.00      1.00         2
+     loadmodule.       1.00      0.00      0.00         1
+       multihop.       1.00      1.00      1.00         1
+        neptune.       1.00      1.00      1.00     10314
+           nmap.       0.97      0.80      0.88        35
+         normal.       1.00      1.00      1.00     17617
+           perl.       1.00      1.00      1.00         1
+            phf.       1.00      1.00      1.00         1
+            pod.       1.00      1.00      1.00        48
+      portsweep.       0.99      0.93      0.96        81
+        rootkit.       0.00      0.00      0.00         1
+          satan.       0.98      0.98      0.98       188
+          smurf.       1.00      1.00      1.00       119
+       teardrop.       1.00      1.00      1.00       183
+    warezclient.       0.96      0.95      0.96       191
+    warezmaster.       1.00      0.80      0.89         5
+
+        accuracy                           1.00     29118
+       macro avg       0.93      0.77      0.78     29118
+    weighted avg       1.00      1.00      1.00     29118
+
+------------------------------------------------------------
+Pred Neural Network /w Early Stopping
+                  precision    recall  f1-score   support
+
+           back.       0.99      0.99      0.99       187
+buffer_overflow.       1.00      0.50      0.67         8
+      ftp_write.       1.00      0.00      0.00         1
+   guess_passwd.       0.89      1.00      0.94         8
+           imap.       1.00      0.00      0.00         1
+        ipsweep.       0.89      0.94      0.91       125
+           land.       1.00      1.00      1.00         2
+     loadmodule.       1.00      0.00      0.00         1
+       multihop.       1.00      0.00      0.00         1
+        neptune.       1.00      1.00      1.00     10314
+           nmap.       1.00      0.54      0.70        35
+         normal.       1.00      1.00      1.00     17617
+           perl.       1.00      0.00      0.00         1
+            phf.       1.00      0.00      0.00         1
+            pod.       1.00      1.00      1.00        48
+      portsweep.       0.95      0.93      0.94        81
+        rootkit.       1.00      0.00      0.00         1
+          satan.       0.99      0.98      0.98       188
+          smurf.       1.00      1.00      1.00       119
+       teardrop.       1.00      1.00      1.00       183
+    warezclient.       0.94      0.94      0.94       191
+    warezmaster.       0.00      0.00      0.00         5
+
+        accuracy                           1.00     29118
+       macro avg       0.94      0.58      0.59     29118
+    weighted avg       1.00      1.00      1.00     29118
+
+------------------------------------------------------------
+Pred Rand Forest Classifier
+                  precision    recall  f1-score   support
+
+           back.       1.00      1.00      1.00       187
+buffer_overflow.       0.88      0.88      0.88         8
+      ftp_write.       1.00      0.00      0.00         1
+   guess_passwd.       1.00      1.00      1.00         8
+           imap.       1.00      0.00      0.00         1
+        ipsweep.       0.98      1.00      0.99       125
+           land.       1.00      1.00      1.00         2
+     loadmodule.       1.00      1.00      1.00         1
+       multihop.       1.00      0.00      0.00         1
+        neptune.       1.00      1.00      1.00     10314
+           nmap.       1.00      1.00      1.00        35
+         normal.       1.00      1.00      1.00     17617
+           perl.       1.00      1.00      1.00         1
+            phf.       1.00      0.00      0.00         1
+            pod.       1.00      1.00      1.00        48
+      portsweep.       1.00      0.99      0.99        81
+        rootkit.       1.00      0.00      0.00         1
+          satan.       1.00      0.99      0.99       188
+          smurf.       1.00      1.00      1.00       119
+       teardrop.       1.00      1.00      1.00       183
+    warezclient.       0.99      0.99      0.99       191
+    warezmaster.       1.00      0.80      0.89         5
+
+        accuracy                           1.00     29118
+       macro avg       0.99      0.76      0.76     29118
+    weighted avg       1.00      1.00      1.00     29118
+
+##################################################
+ #----------------------------------------------------------------------------------------------------------------------------------------------------------#
+ | -------------------------- |  Precision Score   |   Recall Score   |  F1-Score   |   Accuracy Score   |   Balanced Accuracy Score   |      Duration     |
+ | Multi-Layer Perceptron     |        93 %                 77 %            78 %             100 %                     77 %               0:11:26.346627   |
+ | MLP w/early Stopping       |        94 %                 58 %            59 %             100 %                     58 %               0:05:06.624760   |
+ | Random Forest Classifier   |        99 %                 76 %            76 %             100 %                     76 %               0:02:38.898837   |
+ #----------------------------------------------------------------------------------------------------------------------------------------------------------#
