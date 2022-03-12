@@ -1,4 +1,4 @@
-# AI-Based-IDS
+# AI/Data-Mining-Based-IDS
 
 # Date Created
   Back in October 2020 - During MSc Indivdual Project
